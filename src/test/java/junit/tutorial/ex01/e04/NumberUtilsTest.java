@@ -30,9 +30,11 @@ class NumberUtilsTest {
 	@Test
 	@DisplayName("boolean")
 	void bool() {
-		assertTrue("10".isEmpty());
-	
-		assertFalse("7".isEmpty());
-	
+		
+		boolean _10nokextuka = NumberUtils.isEven(10);
+		boolean _7nokextukan = NumberUtils.isEven(7);
+		
+		assertTrue(_10nokextuka);
+		assertFalse(_7nokextukan);
 	}
 }
